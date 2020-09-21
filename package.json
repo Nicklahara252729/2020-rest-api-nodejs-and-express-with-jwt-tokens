@@ -1,0 +1,30 @@
+{
+  "name": "nodejs-restful-api-express-with-jwt",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "mysql2": "^2.2.3",
+    "sequelize": "^6.3.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nicklahara252729/rest-api-nodejs-and-express-with-jwt-tokens.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nicklahara252729/rest-api-nodejs-and-express-with-jwt-tokens/issues"
+  },
+  "homepage": "https://github.com/Nicklahara252729/rest-api-nodejs-and-express-with-jwt-tokens#readme",
+  "description": ""
+}
