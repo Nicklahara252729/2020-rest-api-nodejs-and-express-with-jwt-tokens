@@ -7,10 +7,8 @@ const logger        = require('morgan');
 const app           = express();
 
 app.use(logger('dev'));
+app.use(express.urlencoded({extended: true}));
 app.use(express.json());
-app.use(express.urlencoded({
-    extended: true
-}));
 app.use(cookieParser());
 app.use(express.static("app/public"));
 
@@ -21,6 +19,7 @@ const baseUrl = process.env.URL + port;
 
 app.use((req, res, next) => {
     res.header("Access-Control-Allow-Origin", "*");
+    res.header("Content-Type", "application/x-www-form-urlencoded");
     res.header(
         "Access-Control-Allow-Headers",
         "Origin, X-Requested-With, Content-Type, Accept, Authorization, x-access-token"
